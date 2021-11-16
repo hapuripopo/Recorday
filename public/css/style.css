@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: 'Nanum Myeongjo', serif;
+    margin-left : 10px; margin-right: 10px;
+}
+
+/* header */
+h1 {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 32pt;
+    margin: 10px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 280px 1fr 1fr;
+}
+
+header>div {
+    margin-top: 40px;
+}
+
+/* contents */
+a {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+table td {
+    padding: 3px;
+}
+
+#weekly, #monthly {
+    display: grid;
+    height: 80%;
+    grid-template-columns: 210px 1fr;
+    grid-template-rows: 1fr;
+    margin: 5px;
+}
+
+#daily {
+    display: grid;
+    height: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 5px;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.item {
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: [todo]210px [record]1fr;
+}
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.foldable, .todo, .calender, .memo  {
+    border: black solid 1px;
+    padding: 10px;
+}
